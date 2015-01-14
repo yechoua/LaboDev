@@ -20,6 +20,34 @@ namespace PlanningWebServ
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: ajoutez vos opérations de service ici
+        
+        
+        [OperationContract]
+        List<Artisan> selectArtisans();
+
+        [OperationContract]
+        Artisan ArtisanSelectByDetails();
+
+        [OperationContract]
+        void ArtisanAdd(Artisan artisan);
+
+        [OperationContract]
+        void ArtisanRemove(int idArtisan);
+
+        [OperationContract]
+        List<Artisan> ArtisanTmpTravail();
+
+
+        /*
+        [OperationContract]
+        CompositeType FacturesSelect();
+
+        [OperationContract]
+        CompositeType FacturesbyDetailsSelect();
+
+        [OperationContract]
+        CompositeType FactureAdd();
+        */
     }
 
 
@@ -43,5 +71,27 @@ namespace PlanningWebServ
             get { return stringValue; }
             set { stringValue = value; }
         }
+    }
+
+
+    [DataContract]
+    public class Artisan
+    {
+        [DataMember]
+        public string idArtisan { get; set; }
+        [DataMember]
+        public string Sigle { get; set; }
+        [DataMember]
+        public string Nom { get; set; }
+        [DataMember]
+        public string Prenom { get; set; }
+        [DataMember]
+        public string Adresse { get; set; }
+        [DataMember]
+        public string CodePostal { get; set; }
+        [DataMember]
+        public string Telephone { get; set; }
+        [DataMember]
+        public string Email { get; set; }
     }
 }

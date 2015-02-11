@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ProjetLabo_Dev.Interface;
+using ProjetLabo_Dev.ServiceReference1;
 
 namespace ProjetLabo_Dev
 {
@@ -25,7 +26,11 @@ namespace ProjetLabo_Dev
         public MainWindow()
         {
             InitializeComponent();
-            _mainFrame.NavigationService.Navigate(new Acceuil());
+            Service1Client SC = new Service1Client();
+
+            this.TesTextBoxCoonection.Text = SC.TestConnection();
+
+            //_mainFrame.NavigationService.Navigate(new Acceuil());
 
         }
 

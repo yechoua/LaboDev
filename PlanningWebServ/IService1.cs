@@ -12,41 +12,68 @@ namespace PlanningWebServ
     [ServiceContract]
     public interface IService1
     {
-
+        
         [OperationContract]
         string GetData(int value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        // TODO: ajoutez vos opérations de service ici
-        
-        
+
+
+        [OperationContract]
+        string TestConnection();
+
+        /*
+         * Artisans
+         * **/
+
         [OperationContract]
         List<Artisan> selectArtisans();
 
         [OperationContract]
-        Artisan ArtisanSelectByDetails();
+        List<Artisan> ArtisanSelectByDetails(Artisan artisanInfo);
 
         [OperationContract]
         void ArtisanAdd(Artisan artisan);
 
         [OperationContract]
-        void ArtisanRemove(int idArtisan);
+        void ArtisanRemove(Artisan idArtisan);
 
-        [OperationContract]
-        List<Artisan> ArtisanTmpTravail();
+
 
 
         /*
+         * Clients
+         * **/
         [OperationContract]
-        CompositeType FacturesSelect();
+        List<Client> SelectAllClients();
 
         [OperationContract]
-        CompositeType FacturesbyDetailsSelect();
+        List<Client> ClientSelectByDetails(Client artisanInfo);
 
         [OperationContract]
-        CompositeType FactureAdd();
+        void ClientAdd(Client client);
+
+        [OperationContract]
+        void ClientRemove(Client idClient);
+
+
+        /*
+         * taches
+         * **/
+        /*
+        [OperationContract]
+        List<Client> SelectAllTache();
+
+        [OperationContract]
+        List<Client> TacheSelectByDetails(Tache tacheInfo);
+
+        [OperationContract]
+        void TacheAdd(Tache tache);
+
+        [OperationContract]
+        void TacheRemove(Tache idTache);
         */
     }
 
@@ -78,7 +105,7 @@ namespace PlanningWebServ
     public class Artisan
     {
         [DataMember]
-        public string idArtisan { get; set; }
+        public int idArtisan { get; set; }
         [DataMember]
         public string Sigle { get; set; }
         [DataMember]
@@ -88,10 +115,59 @@ namespace PlanningWebServ
         [DataMember]
         public string Adresse { get; set; }
         [DataMember]
-        public string CodePostal { get; set; }
+        public int CodePostal { get; set; }
         [DataMember]
         public string Telephone { get; set; }
         [DataMember]
         public string Email { get; set; }
     }
+
+    [DataContract]
+    public class Client
+    {
+        [DataMember]
+        public int idClient { get; set; }
+        [DataMember]
+        public string Sigle { get; set; }
+        [DataMember]
+        public string Nom { get; set; }
+        [DataMember]
+        public string Prenom { get; set; }
+        [DataMember]
+        public string Adresse { get; set; }
+        [DataMember]
+        public int CodePostal { get; set; }
+        [DataMember]
+        public string Pays { get; set; }
+        [DataMember]
+        public int Telephone { get; set; }
+        [DataMember]
+        public string Mail { get; set; }
+        [DataMember]
+        public string DateEntree { get; set; }
+        [DataMember]
+        public string DateDerniereFacturation { get; set; }
+    }
+
+    [DataContract]
+    public class Tache
+    {
+        [DataMember]
+        public int id { get; set; }
+        [DataMember]
+        public string NomTache { get; set; }
+        [DataMember]
+        public int IdClient { get; set; }
+        [DataMember]
+        public string IdArtisan { get; set; }
+        [DataMember]
+        public string Statut { get; set; }
+        [DataMember]
+        public int idCommentaire { get; set; }
+        [DataMember]
+        public string Debut { get; set; }
+        [DataMember]
+        public string Duree { get; set; }
+    }
+    
 }

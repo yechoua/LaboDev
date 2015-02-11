@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Data;
+
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,6 +29,15 @@ namespace ProjetLabo_Dev.Interface
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Acceuil());
+        }
+
+
+        private void btnEnvoyerMessage_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string fromClient = txtMail.Text; //Mail du Client
+            string messageToSend = txtMessage.Text;  //Message du client
+            
         }
     }
 }

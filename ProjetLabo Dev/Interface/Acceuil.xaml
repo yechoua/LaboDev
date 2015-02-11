@@ -8,10 +8,10 @@
 	Title="Acceuil">
 
     <Grid>
-        <Button Content="Gestion" HorizontalAlignment="Left" Margin="108,53,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Paramètre" HorizontalAlignment="Left" Margin="108,92,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Planning" HorizontalAlignment="Left" Margin="108,127,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <Button Content="Support" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
-        <Button Content="Clients" HorizontalAlignment="Left" Margin="108,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
+        <Button x:Name="btnGestion" Content="Gestion" HorizontalAlignment="Left" Margin="108,53,0,0" VerticalAlignment="Top" Width="75" Click="btnGestion_Click" />
+        <Button x:Name="btnParametre" Content="Paramètre" HorizontalAlignment="Left" Margin="108,92,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnPlanning" Content="Planning" HorizontalAlignment="Left" Margin="108,127,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnSupport" Content="Support" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnClients" Content="Clients" HorizontalAlignment="Left" Margin="108,203,0,0" VerticalAlignment="Top" Width="75" />
     </Grid>
 </Page>

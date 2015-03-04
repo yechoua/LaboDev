@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 
 namespace ProjetLabo_Dev.Interface
 {
@@ -29,5 +30,14 @@ namespace ProjetLabo_Dev.Interface
         {
             this.NavigationService.Navigate(new Acceuil());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ProjetLabo_Dev.Form1.ActiveForm.ShowDialog();
+
+
+        }
+
+        
     }
 }

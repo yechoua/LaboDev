@@ -18,18 +18,7 @@ namespace LaboDev
 
     public partial class AjouterArtisan : UserControl
     {
-        public enum SigleItems
-        {
-            Mr,
-            Mme,
-            M
-        }
 
-        public AjouterArtisan()
-        {
-            //InitializeComponent();
-         cmbxSigle.ItemsSource = Enum.GetValues(typeof(SigleItems));
-            
-        }
+
     }
 }

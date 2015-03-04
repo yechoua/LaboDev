@@ -9,6 +9,7 @@
 
     <Grid>
         <Button Content="Accueil" HorizontalAlignment="Left" Margin="49,41,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Scheduler" HorizontalAlignment="Left" Margin="215,41,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
 
     </Grid>
 </Page>

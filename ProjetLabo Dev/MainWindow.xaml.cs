@@ -27,6 +27,7 @@ namespace ProjetLabo_Dev
             InitializeComponent();
             _mainFrame.NavigationService.Navigate(new Acceuil());
             //test
+           
         }
 
     }

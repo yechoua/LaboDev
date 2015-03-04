@@ -54,13 +54,13 @@
             this.calendar1.Size = new System.Drawing.Size(651, 430);
             this.calendar1.TabIndex = 0;
             this.calendar1.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.calendar1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.calendar1_MouseDoubleClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 431);
-            this.ControlBox = false;
             this.Controls.Add(this.calendar1);
             this.Name = "Form1";
             this.Text = "Planning";

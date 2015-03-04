@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace LaboDev
+namespace ProjetLabo_Dev
 {
-    public partial class AjouterArtisan : UserControl
+    /// <summary>
+    /// Logique d'interaction pour Gestion.xaml
+    /// </summary>
+    public partial class Gestion : Page
     {
-        public enum SigleItems
-        {
-            Mr,
-            Mme,
-            M
-        }
-
-        public AjouterArtisan()
+        public Gestion()
         {
             InitializeComponent();
-           
         }
     }
 }

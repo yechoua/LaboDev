@@ -49,5 +49,12 @@ namespace ProjetLabo_Dev.Interface
         {
             this.NavigationService.Navigate(new Clients());
         }
+
+        private void btnGestion_Click(object sender, RoutedEventArgs e)
+        {
+            ProjetLabo_Dev.Form1 p = new Form1();
+            p.Show();
+//            ProjetLabo_Dev.Form1.ActiveForm.Show();
+        }
     }
 }

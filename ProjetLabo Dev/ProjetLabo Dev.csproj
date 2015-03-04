@@ -76,10 +76,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Interface\AjouterArtisan.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Interface\AjouterClient.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -126,7 +122,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interface\AjouterArtisan.xaml.cs" />
     <Compile Include="Interface\AjouterClient.xaml.cs" />
     <Compile Include="Interface\CalendarUC.xaml.cs">
       <DependentUpon>CalendarUC.xaml</DependentUpon>

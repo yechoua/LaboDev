@@ -10,7 +10,7 @@
     <Grid>
         <Button x:Name="btnGestion" Content="Gestion" HorizontalAlignment="Left" Margin="108,53,0,0" VerticalAlignment="Top" Width="75" Click="btnGestion_Click" />
         <Button x:Name="btnParametre" Content="Paramètre" HorizontalAlignment="Left" Margin="108,92,0,0" VerticalAlignment="Top" Width="75" />
-        <Button x:Name="btnPlanning" Content="Planning" HorizontalAlignment="Left" Margin="108,127,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnPlanning" Content="Planning" HorizontalAlignment="Left" Margin="108,127,0,0" VerticalAlignment="Top" Width="75" Click="btnPlanning_Click" />
         <Button x:Name="btnSupport" Content="Support" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top" Width="75" />
         <Button x:Name="btnClients" Content="Clients" HorizontalAlignment="Left" Margin="108,203,0,0" VerticalAlignment="Top" Width="75" />
     </Grid>

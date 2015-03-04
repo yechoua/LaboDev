@@ -52,9 +52,14 @@ namespace ProjetLabo_Dev.Interface
 
         private void btnGestion_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void btnPlanning_Click(object sender, RoutedEventArgs e)
+        {
             ProjetLabo_Dev.Form1 p = new Form1();
             p.Show();
-//            ProjetLabo_Dev.Form1.ActiveForm.Show();
+       
         }
     }
 }

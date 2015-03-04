@@ -123,5 +123,10 @@ namespace ProjetLabo_Dev
             //add event
 
         }
+
+        private void calendar1_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

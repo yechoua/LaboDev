@@ -54,6 +54,7 @@
             this.calendar1.Size = new System.Drawing.Size(651, 430);
             this.calendar1.TabIndex = 0;
             this.calendar1.TodayFont = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.calendar1.Load += new System.EventHandler(this.calendar1_Load);
             this.calendar1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.calendar1_MouseDoubleClick);
             // 
             // Form1

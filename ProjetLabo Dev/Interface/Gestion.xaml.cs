@@ -91,17 +91,29 @@ namespace ProjetLabo_Dev.Interface
 
         private void refresh(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            List<Artisan> allArt = SC.selectArtisans();
+            this.GestionGrid.ItemsSource = allArt;
+
         }
 
         private void AddNewArtisan(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Artisan test = new Artisan();
+
+            test.Nom = this.txtNom.Text;
+            test.Prenom = this.txtPrenom.Text;
+            test.Sigle = this.cmbxSigle.Text;
+            test.Adresse = this.txtAdresse.Text;
+            test.CodePostal = Convert.ToInt32(this.txtCodePostal.Text);
+            test.Telephone = this.txtTelephone.Text;
+            test.Email = this.txtMail.Text;
+
+            SC.ArtisanAdd(test);
         }
 
         private void RemoveArtisan(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            SC.ArtisanRemove(actualArtisan);
         }
     }
 }

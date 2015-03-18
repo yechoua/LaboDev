@@ -176,15 +176,17 @@ namespace PlanningWebServ
         public void ArtisanAdd(Artisan artisan)
         {
             string RequeteInsertArtisan =
-                "INSERT INTO Artisan (idArtisan, Sigle, Nom, Prenom, Adresse, CodePostal, Telephone,Email)" +
+                "INSERT INTO Artisan (Sigle, Nom, Prenom, Adresse, CodePostal, Telephone,Email)" +
                 "VALUES ('" + artisan.Sigle + "' ,'" + artisan.Nom + "' ,'" + artisan.Prenom + "' ,'" + artisan.Adresse +
                 "'," +
                 "'" + artisan.CodePostal + "','" + artisan.Telephone + "','" + artisan.Email + "')";
 
             using (SqlConnection connection = new SqlConnection(connString))
             {
+                connection.Open();
                 SqlCommand cmd = new SqlCommand(RequeteInsertArtisan, connection);
                 int returnExec = cmd.ExecuteNonQuery(); 
+                connection.Close();
             }
         }
 

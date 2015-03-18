@@ -159,7 +159,7 @@ namespace PlanningWebServ
         [DataMember]
         public int IdClient { get; set; }
         [DataMember]
-        public string IdArtisan { get; set; }
+        public int IdArtisan { get; set; }
         [DataMember]
         public string Statut { get; set; }
         [DataMember]

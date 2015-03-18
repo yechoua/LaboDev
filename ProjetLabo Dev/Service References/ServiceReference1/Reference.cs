@@ -459,16 +459,16 @@ namespace ProjetLabo_Dev.ServiceReference1 {
         System.Threading.Tasks.Task<string> TestConnectionAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/selectArtisans", ReplyAction="http://tempuri.org/IService1/selectArtisansResponse")]
-        ProjetLabo_Dev.ServiceReference1.Artisan[] selectArtisans();
+        System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan> selectArtisans();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/selectArtisans", ReplyAction="http://tempuri.org/IService1/selectArtisansResponse")]
-        System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Artisan[]> selectArtisansAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan>> selectArtisansAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ArtisanSelectByDetails", ReplyAction="http://tempuri.org/IService1/ArtisanSelectByDetailsResponse")]
-        ProjetLabo_Dev.ServiceReference1.Artisan[] ArtisanSelectByDetails(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo);
+        System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan> ArtisanSelectByDetails(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ArtisanSelectByDetails", ReplyAction="http://tempuri.org/IService1/ArtisanSelectByDetailsResponse")]
-        System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Artisan[]> ArtisanSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan>> ArtisanSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ArtisanAdd", ReplyAction="http://tempuri.org/IService1/ArtisanAddResponse")]
         void ArtisanAdd(ProjetLabo_Dev.ServiceReference1.Artisan artisan);
@@ -483,16 +483,16 @@ namespace ProjetLabo_Dev.ServiceReference1 {
         System.Threading.Tasks.Task ArtisanRemoveAsync(ProjetLabo_Dev.ServiceReference1.Artisan idArtisan);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SelectAllClients", ReplyAction="http://tempuri.org/IService1/SelectAllClientsResponse")]
-        ProjetLabo_Dev.ServiceReference1.Client[] SelectAllClients();
+        System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client> SelectAllClients();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SelectAllClients", ReplyAction="http://tempuri.org/IService1/SelectAllClientsResponse")]
-        System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Client[]> SelectAllClientsAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client>> SelectAllClientsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ClientSelectByDetails", ReplyAction="http://tempuri.org/IService1/ClientSelectByDetailsResponse")]
-        ProjetLabo_Dev.ServiceReference1.Client[] ClientSelectByDetails(ProjetLabo_Dev.ServiceReference1.Client artisanInfo);
+        System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client> ClientSelectByDetails(ProjetLabo_Dev.ServiceReference1.Client artisanInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ClientSelectByDetails", ReplyAction="http://tempuri.org/IService1/ClientSelectByDetailsResponse")]
-        System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Client[]> ClientSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Client artisanInfo);
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client>> ClientSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Client artisanInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ClientAdd", ReplyAction="http://tempuri.org/IService1/ClientAddResponse")]
         void ClientAdd(ProjetLabo_Dev.ServiceReference1.Client client);
@@ -558,19 +558,19 @@ namespace ProjetLabo_Dev.ServiceReference1 {
             return base.Channel.TestConnectionAsync();
         }
         
-        public ProjetLabo_Dev.ServiceReference1.Artisan[] selectArtisans() {
+        public System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan> selectArtisans() {
             return base.Channel.selectArtisans();
         }
         
-        public System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Artisan[]> selectArtisansAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan>> selectArtisansAsync() {
             return base.Channel.selectArtisansAsync();
         }
         
-        public ProjetLabo_Dev.ServiceReference1.Artisan[] ArtisanSelectByDetails(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo) {
+        public System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan> ArtisanSelectByDetails(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo) {
             return base.Channel.ArtisanSelectByDetails(artisanInfo);
         }
         
-        public System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Artisan[]> ArtisanSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo) {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Artisan>> ArtisanSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Artisan artisanInfo) {
             return base.Channel.ArtisanSelectByDetailsAsync(artisanInfo);
         }
         
@@ -590,19 +590,19 @@ namespace ProjetLabo_Dev.ServiceReference1 {
             return base.Channel.ArtisanRemoveAsync(idArtisan);
         }
         
-        public ProjetLabo_Dev.ServiceReference1.Client[] SelectAllClients() {
+        public System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client> SelectAllClients() {
             return base.Channel.SelectAllClients();
         }
         
-        public System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Client[]> SelectAllClientsAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client>> SelectAllClientsAsync() {
             return base.Channel.SelectAllClientsAsync();
         }
         
-        public ProjetLabo_Dev.ServiceReference1.Client[] ClientSelectByDetails(ProjetLabo_Dev.ServiceReference1.Client artisanInfo) {
+        public System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client> ClientSelectByDetails(ProjetLabo_Dev.ServiceReference1.Client artisanInfo) {
             return base.Channel.ClientSelectByDetails(artisanInfo);
         }
         
-        public System.Threading.Tasks.Task<ProjetLabo_Dev.ServiceReference1.Client[]> ClientSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Client artisanInfo) {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProjetLabo_Dev.ServiceReference1.Client>> ClientSelectByDetailsAsync(ProjetLabo_Dev.ServiceReference1.Client artisanInfo) {
             return base.Channel.ClientSelectByDetailsAsync(artisanInfo);
         }
         

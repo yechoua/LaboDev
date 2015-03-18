@@ -18,7 +18,7 @@ namespace ProjetLabo_Dev.Interface
     /// <summary>
     /// Logique d'interaction pour Gestion.xaml
     /// </summary>
-    public partial class Gestion : Page
+    public partial class Gestion : UserControl
     {
         public Gestion()
         {
@@ -27,7 +27,7 @@ namespace ProjetLabo_Dev.Interface
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Acceuil());
+            //this.NavigationService.Navigate(new Acceuil());
         }
     }
 }

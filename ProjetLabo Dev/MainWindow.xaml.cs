@@ -28,11 +28,41 @@ namespace ProjetLabo_Dev
             InitializeComponent();
             Service1Client SC = new Service1Client();
 
-            this.TesTextBoxCoonection.Text = SC.TestConnection();
-
+            //this.TesTextBoxCoonection.Text = SC.TestConnection();
+            //this._mainFrame.Children.Add(new Acceuil());
             //_mainFrame.NavigationService.Navigate(new Acceuil());
 
         }
 
+        private void btnGestion_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Children.Clear();
+            this._mainFrame.Children.Add(new Gestion());
+        }
+       
+        private void btnPlanning_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Children.Clear();
+            this._mainFrame.Children.Add(new Planning());
+        }
+
+        private void btnSupport_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Children.Clear();
+            this._mainFrame.Children.Add(new Support());
+        }
+
+        public void btnClients_Click(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Children.Clear();
+            this._mainFrame.Children.Add(new Clients());
+
+        }
+
+        private void BtnParametre_OnClick(object sender, RoutedEventArgs e)
+        {
+            _mainFrame.Children.Clear();
+            this._mainFrame.Children.Add(new Parametres());
+        }
     }
 }

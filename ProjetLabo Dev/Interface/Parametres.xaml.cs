@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace ProjetLabo_Dev.Interface
 {
     /// <summary>
-    /// Logique d'interaction pour Planning.xaml
+    /// Logique d'interaction pour Parametres.xaml
     /// </summary>
-    public partial class Planning : UserControl
+    public partial class Parametres : UserControl
     {
-        public Planning()
+        public Parametres()
         {
             InitializeComponent();
         }
